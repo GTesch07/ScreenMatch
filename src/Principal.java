@@ -1,0 +1,16 @@
+//instanciar objetos
+public class Principal {
+    public static void main(String args[]){
+        Filme meuFilme = new Filme();
+        //Criando uma variavel para referenciar o objeto       //Cria uma parte na memória
+
+        meuFilme.nome = "O poderoso chefão";
+        meuFilme.anoDeLancamento = 1972;
+        meuFilme.duracaoEmMinutos = 175;
+
+        System.out.println(meuFilme.anoDeLancamento);
+        //Acessar o atributo do objeto
+
+
+    }
+}
