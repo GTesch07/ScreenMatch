@@ -9,6 +9,11 @@ public class Filme {
     private  int totalDeAvaliacaos;
     int duracaoEmMinutos;
 
+    //metodo acessor Getters Setters
+    int getTotalDeAvaliacaos(){
+        return totalDeAvaliacaos;
+    }
+
     //Criando métodos = Maneira "de" fazer algo
     void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
