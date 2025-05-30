@@ -4,8 +4,9 @@ public class Filme {
     String nome;
     int anoDeLancamento;
     boolean incluidoNoPlano;
-    double somaDasAvaliacoes;
-    int totalDeAvaliacaos;
+    //Modificadores de acesso private
+    private double somaDasAvaliacoes;
+    private  int totalDeAvaliacaos;
     int duracaoEmMinutos;
 
     //Criando métodos = Maneira "de" fazer algo
