@@ -6,9 +6,9 @@ public class Principal {
         Filme meuFilme = new Filme();
         //Criando uma variavel para referenciar o objeto       //Cria uma parte na memória
 
-        meuFilme.nome = "O poderoso chefão";
-        meuFilme.anoDeLancamento = 1972;
-        meuFilme.duracaoEmMinutos = 175;
+        meuFilme.setNome("O poderoso chefão");
+        meuFilme.setAnoDeLancamento(1972);
+        meuFilme.setDuracaoEmMinutos(175);
 
 
         meuFilme.exibeFichaTecnica();
