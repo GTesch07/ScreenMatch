@@ -2,7 +2,7 @@ import br.com.alura.screenmatch.modelos.Filme;
 
 //instanciar objetos
 public class Principal {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Filme meuFilme = new Filme();
         //Criando uma variavel para referenciar o objeto       //Cria uma parte na memória
 
