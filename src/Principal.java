@@ -1,4 +1,5 @@
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
 
 //instanciar objetos
 public class Principal {
@@ -21,6 +22,14 @@ public class Principal {
         //  meuFilme.somaDasAvaliacoes = 10;
         //  meuFilme.totalDeAvaliacaos =1;
         // System.out.println(meuFilme.mediaDasAvaliacoes());
+
+        Serie serie = new Serie();
+        serie.setNome("Supernatural");
+        serie.setAnoDeLancamento(2010);
+        serie.exibeFichaTecnica();
+        serie.setTemporadas(10);
+        serie.setEpisodiosPorTemporada(10);
+        serie.setMinutosPorEpisodio(160);
 
     }
 }
