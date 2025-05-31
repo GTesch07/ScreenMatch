@@ -10,6 +10,7 @@ public class Principal {
         meuFilme.setNome("O poderoso chefão");
         meuFilme.setAnoDeLancamento(1972);
         meuFilme.setDuracaoEmMinutos(175);
+        System.out.println("Duração do filme: "+ meuFilme.getDuracaoEmMinutos());
 
 
         meuFilme.exibeFichaTecnica();
@@ -29,7 +30,8 @@ public class Principal {
         serie.exibeFichaTecnica();
         serie.setTemporadas(10);
         serie.setEpisodiosPorTemporada(10);
-        serie.setMinutosPorEpisodio(160);
+        serie.setMinutosPorEpisodio(50);
+        System.out.println("Duração para maratonar Supernatural em minutos: " + serie.getDuracaoEmMinutos());
 
     }
 }
