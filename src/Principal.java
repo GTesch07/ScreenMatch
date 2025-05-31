@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculos.CalculadoreDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -33,5 +34,16 @@ public class Principal {
         serie.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar Supernatural em minutos: " + serie.getDuracaoEmMinutos());
 
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Avatar");
+        outroFilme.setAnoDeLancamento(2023);
+        outroFilme.setDuracaoEmMinutos(200);
+
+
+        CalculadoreDeTempo calculadora = new CalculadoreDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(outroFilme);
+        calculadora.inclui(serie);
+        System.out.println(calculadora.getTempoTotal());
     }
 }
