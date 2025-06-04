@@ -4,6 +4,8 @@ import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 //instanciar objetos
 public class Principal {
     public static void main(String[] args){
@@ -56,5 +58,24 @@ public class Principal {
         episodio.setSerie(serie);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
+
+        //A variável var realiza uma inferência do tipo declarado
+        var filmeDoGuilherme = new Filme();
+        filmeDoGuilherme.setNome("O Lobo de Wall Street");
+        filmeDoGuilherme.setDuracaoEmMinutos(180);
+        filmeDoGuilherme.setAnoDeLancamento(2013);
+        filmeDoGuilherme.avalia(10);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+
+        listaDeFilmes.add(filmeDoGuilherme);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: "+ listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
+
+
+
     }
 }
