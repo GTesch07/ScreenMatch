@@ -1,4 +1,4 @@
-import br.com.alura.screenmatch.calculos.CalculadoreDeTempo;
+import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
@@ -9,10 +9,10 @@ import java.util.ArrayList;
 //instanciar objetos
 public class Principal {
     public static void main(String[] args){
-        Filme meuFilme = new Filme();
+        Filme meuFilme = new Filme("O poderoso chefão");
         //Criando uma variavel para referenciar o objeto       //Cria uma parte na memória
 
-        meuFilme.setNome("O poderoso chefão");
+      //  meuFilme.setNome("O poderoso chefão");
         meuFilme.setAnoDeLancamento(1972);
         meuFilme.setDuracaoEmMinutos(175);
         System.out.println("Duração do filme: "+ meuFilme.getDuracaoEmMinutos());
@@ -38,13 +38,13 @@ public class Principal {
         serie.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar Supernatural em minutos: " + serie.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Avatar");
+        Filme outroFilme = new Filme("Avatar");
+      //  outroFilme.setNome("Avatar");
         outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
 
 
-        CalculadoreDeTempo calculadora = new CalculadoreDeTempo();
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(meuFilme);
         calculadora.inclui(outroFilme);
         calculadora.inclui(serie);
@@ -60,8 +60,8 @@ public class Principal {
         filtro.filtra(episodio);
 
         //A variável var realiza uma inferência do tipo declarado
-        var filmeDoGuilherme = new Filme();
-        filmeDoGuilherme.setNome("O Lobo de Wall Street");
+        var filmeDoGuilherme = new Filme("O Lobo de Wall Street");
+        //filmeDoGuilherme.setNome("O Lobo de Wall Street");
         filmeDoGuilherme.setDuracaoEmMinutos(180);
         filmeDoGuilherme.setAnoDeLancamento(2013);
         filmeDoGuilherme.avalia(10);
@@ -75,8 +75,6 @@ public class Principal {
         System.out.println("Primeiro filme: "+ listaDeFilmes.get(0).getNome());
         System.out.println(listaDeFilmes);
         System.out.println("toString do filme: " + listaDeFilmes.get(0).toString());
-
-
 
 
     }

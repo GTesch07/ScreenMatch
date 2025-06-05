@@ -42,4 +42,10 @@ public class Serie extends Titulo{
     public int getDuracaoEmMinutos() {
         return temporadas * episodiosPorTemporada * minutosPorEpisodio ;
     }
+
+    @Override
+    public void exibeFichaTecnica() {
+        System.out.println("Nome da serie: " + getNome());
+        System.out.println("Ano de lançamento: " + getAnoDeLancamento());
+    }
 }
