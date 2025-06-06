@@ -8,11 +8,11 @@ import br.com.alura.screenmatch.calculos.Classificavel;
 //Implements = Palavra reservada do Java que aplica ainda tem a herança da classe do extends mas implementa a classe classificavel.
 public class Filme extends Titulo implements Classificavel {
 
-    public Filme(String nome){
-        this.setNome(nome);
-    }
-
     private String diretor;
+
+    public Filme(String nome, int anoDeLancamento){
+        super(nome, anoDeLancamento);
+    }
 
     public String getDiretor(){
         return diretor;

@@ -10,6 +10,10 @@ public class Titulo {
     private int totalDeAvaliacaos;
     private int duracaoEmMinutos;
 
+    public Titulo(String nome, int anoDeLancamento){
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
     //metodo acessor Getters Setters
     //getters = buscar valor
     //setters = incluir valor no atributo

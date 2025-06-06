@@ -9,11 +9,7 @@ import java.util.ArrayList;
 //instanciar objetos
 public class Principal {
     public static void main(String[] args){
-        Filme meuFilme = new Filme("O poderoso chefão");
-        //Criando uma variavel para referenciar o objeto       //Cria uma parte na memória
-
-      //  meuFilme.setNome("O poderoso chefão");
-        meuFilme.setAnoDeLancamento(1972);
+        Filme meuFilme = new Filme("O poderoso chefão",1972);
         meuFilme.setDuracaoEmMinutos(175);
         System.out.println("Duração do filme: "+ meuFilme.getDuracaoEmMinutos());
 
@@ -29,18 +25,14 @@ public class Principal {
         //  meuFilme.totalDeAvaliacaos =1;
         // System.out.println(meuFilme.mediaDasAvaliacoes());
 
-        Serie serie = new Serie();
-        serie.setNome("Supernatural");
-        serie.setAnoDeLancamento(2010);
+        Serie serie = new Serie("Supernatural",2010);
         serie.exibeFichaTecnica();
         serie.setTemporadas(10);
         serie.setEpisodiosPorTemporada(10);
         serie.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar Supernatural em minutos: " + serie.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme("Avatar");
-      //  outroFilme.setNome("Avatar");
-        outroFilme.setAnoDeLancamento(2023);
+        Filme outroFilme = new Filme("Avatar", 2023);
         outroFilme.setDuracaoEmMinutos(200);
 
 
@@ -60,10 +52,8 @@ public class Principal {
         filtro.filtra(episodio);
 
         //A variável var realiza uma inferência do tipo declarado
-        var filmeDoGuilherme = new Filme("O Lobo de Wall Street");
-        //filmeDoGuilherme.setNome("O Lobo de Wall Street");
+        var filmeDoGuilherme = new Filme("O Lobo de Wall Street", 2013);
         filmeDoGuilherme.setDuracaoEmMinutos(180);
-        filmeDoGuilherme.setAnoDeLancamento(2013);
         filmeDoGuilherme.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
