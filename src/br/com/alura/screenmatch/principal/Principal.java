@@ -32,6 +32,9 @@ public class Principal {
         serie.setTemporadas(10);
         serie.setEpisodiosPorTemporada(10);
         serie.setMinutosPorEpisodio(50);
+        serie.avalia(5);
+        serie.avalia(9);
+        serie.avalia(8);
         System.out.println("Duração para maratonar Supernatural em minutos: " + serie.getDuracaoEmMinutos());
 
         Filme outroFilme = new Filme("Avatar", 2023);
@@ -57,6 +60,8 @@ public class Principal {
         var filmeDoGuilherme = new Filme("O Lobo de Wall Street", 2013);
         filmeDoGuilherme.setDuracaoEmMinutos(180);
         filmeDoGuilherme.avalia(10);
+        filmeDoGuilherme.avalia(9);
+        filmeDoGuilherme.avalia(8);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
 

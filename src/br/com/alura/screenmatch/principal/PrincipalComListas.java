@@ -16,15 +16,18 @@ public class PrincipalComListas {
         meuFilme.avalia(10);
         Serie serie = new Serie("Supernatural",2010);
 
+
+
         ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(filmeDoGuilherme);
         lista.add(meuFilme);
         lista.add(outroFilme);
         lista.add(serie);
         for (Titulo item: lista){
-            Filme filme = (Filme) item;
-            System.out.println(item.getNome());
-            System.out.println("Classificação: "+ ((Filme) item).getClassificacao());
+           System.out.println(item.getNome());
+           if (item instanceof Filme filme && filme.getClassificacao() > 2){
+               System.out.println("Classificação: " + filme.getClassificacao());
+           }
         }
     }
 }
