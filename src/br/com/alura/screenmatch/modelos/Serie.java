@@ -52,4 +52,9 @@ public class Serie extends Titulo{
         System.out.println("Nome da serie: " + getNome());
         System.out.println("Ano de lançamento: " + getAnoDeLancamento());
     }
+
+    @Override
+    public String toString() {
+        return "Série: " + this.getNome() + " ("+this.getAnoDeLancamento() + ")";
+    }
 }
